@@ -17,4 +17,5 @@ subsets: "latin-ext"
 subsets: "menu"
 source {
   repository_url: "https://github.com/harelix/samo-ramen-fonts"
+  commit: "fe67eb96223b705040ede49cab2ce270278fd685"
 }
