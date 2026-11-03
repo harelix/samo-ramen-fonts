@@ -1,0 +1,37 @@
+/* Samo Ramen Humanist: drop this file and the fonts/ folder into your site. */
+
+@font-face {
+  font-family: "Samo Ramen Humanist";
+  src: url("fonts/SamoRamenHumanist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Samo Ramen Humanist Display";
+  src: url("fonts/SamoRamenHumanistDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-samo-text: "Samo Ramen Humanist", system-ui, sans-serif;
+  --font-samo-display: "Samo Ramen Humanist Display", "Samo Ramen Humanist", system-ui, sans-serif;
+}
+
+/* Example use: body text in Humanist, headings in Display. Only a Regular weight
+   exists, so stop browsers from faking bold. */
+body {
+  font-family: var(--font-samo-text);
+  font-synthesis: none;
+}
+
+h1, h2, h3, .logo {
+  font-family: var(--font-samo-display);
+  font-weight: 400;
+}
+
+/* Kerning and contextual alternates are on by default. To turn the alternates off:
+   .plain { font-feature-settings: "calt" 0; } */
